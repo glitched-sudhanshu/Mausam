@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DA8BEDAD2D10B6F20051D16A /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = DA8BEDAC2D10B6F20051D16A /* BottomSheet */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DA7FCD232D0F674000AE8A0C /* Mausam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mausam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8BEDAD2D10B6F20051D16A /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Mausam;
 			packageProductDependencies = (
+				DA8BEDAC2D10B6F20051D16A /* BottomSheet */,
 			);
 			productName = Mausam;
 			productReference = DA7FCD232D0F674000AE8A0C /* Mausam.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = DA7FCD1A2D0F674000AE8A0C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DA8BEDAB2D10B6F20051D16A /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DA7FCD242D0F674000AE8A0C /* Products */;
 			projectDirPath = "";
@@ -322,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA8BEDAB2D10B6F20051D16A /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter125/BottomSheet";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA8BEDAC2D10B6F20051D16A /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA8BEDAB2D10B6F20051D16A /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA7FCD1B2D0F674000AE8A0C /* Project object */;
 }

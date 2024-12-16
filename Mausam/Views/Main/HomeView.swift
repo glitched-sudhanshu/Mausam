@@ -9,34 +9,40 @@ import SwiftUI
 
 struct HomeView: View {
   var body: some View {
-    ZStack {
-      
-      //Mark: Background color
-      Color.background
-        .ignoresSafeArea()
-      
-      //Mark: Background Image
-      Image("Background")
-        .resizable()
-        .ignoresSafeArea()
-      
-      //Mark: House Image
-      Image("House")
-        .frame(maxHeight: .infinity, alignment: .top)
-        .padding(.top, 257)
-      
-      //Marl: Info
-      VStack(spacing: -10) {
-        Text("Montreal")
-          .font(.largeTitle)
+    NavigationView {
+      ZStack {
         
-        VStack {
-          Text(attributedString)
-          Text("H:24°   L:18°")
-            .font(.title3.weight(.semibold))
-        }
-        Spacer()
-      }.padding(.top, 51)
+        //Mark: Background color
+        Color.background
+          .ignoresSafeArea()
+        
+        //Mark: Background Image
+        Image("Background")
+          .resizable()
+          .ignoresSafeArea()
+        
+        //Mark: House Image
+        Image("House")
+          .frame(maxHeight: .infinity, alignment: .top)
+          .padding(.top, 257)
+        
+        //Marl: Info
+        VStack(spacing: -10) {
+          Text("Montreal")
+            .font(.largeTitle)
+          
+          VStack {
+            Text(attributedString)
+            Text("H:24°   L:18°")
+              .font(.title3.weight(.semibold))
+          }
+          Spacer()
+        }.padding(.top, 51)
+        
+        //Mark: Tab Bar
+        TabBar(action: {})
+      }
+      .navigationBarHidden(true)
     }
   }
   
